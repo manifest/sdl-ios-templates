@@ -1,4 +1,4 @@
-h1. Minimal Template for Xcode 4
+h1. Minimal Template
 
 A minimal iPhone project template for Xcode 4, creating a starting point of any iPhone application. Specifically, 
 
@@ -12,11 +12,11 @@ h2. How to use
 
 ~/Library/Developer/Xcode/Templates/
 
-* Create a new project from Xcode 4. Select the template from com.borealkiss.Projects on the iOS pane.
+* Create a new project from Xcode 4. Select the template from the iOS pane.
 
 h2. How to customize
 
-I made this template for you to customize as easily as possible. To customize, follow the article below.
+I made this template for you to customize as easily as possible. To customize, see the article below.
 
 h2. Related articles
 
@@ -29,7 +29,7 @@ h2. Contact
 
 h2. License
 
-Minimal Template for Xcode 4 is provided under the terms of "the MIT license":http://www.opensource.org/licenses/mit-license.php.
+Minimal Template is provided under the terms of "the MIT license":http://www.opensource.org/licenses/mit-license.php.
 
 Copyright (c) 2011 boreal-kiss.com
 
