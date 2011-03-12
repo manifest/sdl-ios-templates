@@ -41,6 +41,8 @@
 			<string>AppDelegate</string>
 			<key>Path</key>
 			<string>AppDelegate/AppDelegate.h</string>
+			<key>TargetIndices</key>
+			<array/>
 		</dict>
 		<key>AppDelegate/AppDelegate.m</key>
 		<dict>
@@ -55,6 +57,8 @@
 			<string>TestVC</string>
 			<key>Path</key>
 			<string>TestVC/TestVC.h</string>
+			<key>TargetIndices</key>
+			<array/>
 		</dict>
 		<key>TestVC/TestVC.m</key>
 		<dict>
