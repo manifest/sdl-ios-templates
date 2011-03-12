@@ -8,15 +8,17 @@ A minimal iPhone project template for Xcode 4, creating a starting point of any 
 
 h2. How to use
 
-* Add the all folder-contents (except for the README and LICENSE files) to the following directory. If the Templates folder does not exist create it:
+* Add the all folder-contents (except for the README and LICENSE files) to the following directory. If the Templates directory does not exist create it:
 
+<pre>
 	~/Library/Developer/Xcode/Templates/
+</pre>
 
 * Create a new project from Xcode 4. Select the template from com.borealkiss.Projects on the iOS pane.
 
 h2. How to customize
 
-I made this template for you to customize as easily as possible. To customize, follow the article below.
+I made this template for you to customize as easily as possible. To customize, follow the article below (read it carefully).
 
 h2. Related articles
 
