@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.borealkiss.cocoaTouchApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Info.plist</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Prefix.pch</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Prefix.pch</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>main.cpp</key>
+		<dict>
+			<key>Group</key>
+			<string>Sources</string>
+			<key>Path</key>
+			<string>main.cpp</string>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for SDL application.</string>
+	<key>Identifier</key>
+	<string>org.yanot.SDLApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist</string>
+		<string>Prefix.pch</string>
+		<string>main.cpp</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Configurations</key>
+			<dict>
+				<key>Release</key>
+				<dict>
+					<key>FRAMEWORK_SEARCH_PATHS</key>
+					<string>$(inherited) "~/Library/Frameworks"</string>
+					<key>HEADER_SEARCH_PATHS</key>
+					<string>$(inherited) "~/Library/Frameworks/SDL.framework/Headers"</string>
+				</dict>
+				<key>Debug</key>
+				<dict>
+					<key>FRAMEWORK_SEARCH_PATHS</key>
+					<string>$(inherited) "~/Library/Frameworks"</string>
+					<key>HEADER_SEARCH_PATHS</key>
+					<string>$(inherited) "~/Library/Frameworks/SDL.framework/Headers"</string>
+				</dict>
+			</dict>
+			<key>Frameworks</key>
+			<array>
+				<string>OpenGLES</string>
+				<string>QuartzCore</string>
+				<string>CoreAudio</string>
+				<string>AudioToolbox</string>
+				<string>SDL</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
