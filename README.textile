@@ -30,11 +30,6 @@ h2. Related articles
 
 * "A minimal project template for Xcode 4":http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4/
 
-h2. Contact
-
-* "http://blog.boreal-kiss.net/":http://blog.boreal-kiss.net/
-* "http://twitter.com/borealkiss":http://twitter.com/borealkiss
-
 h2. License
 
 Minimal SDL iOS Application Template based on "Minimal Template":https://github.com/borealkiss/Minimal-Template and is provided under the terms of "the MIT license":http://www.opensource.org/licenses/mit-license.php.
