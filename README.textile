@@ -14,6 +14,8 @@ h2. How to use
 ~/Library/Developer/Xcode/Templates/
 </pre>
 
+* Download and use "SDL iOS build script":https://github.com/manifest1985/sdl-ios-framework
+
 * Place the SDL.framework to the following directory.
 
 <pre>
