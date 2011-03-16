@@ -47,9 +47,9 @@
 				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>___PACKAGENAME___/Prefix.pch</string>
+				<string>___PACKAGENAME___/prefix.pch</string>
 				<key>INFOPLIST_FILE</key>
-				<string>___PACKAGENAME___/Info.plist</string>
+				<string>___PACKAGENAME___/info.plist</string>
 			</dict>
 		</dict>
 	</array>
