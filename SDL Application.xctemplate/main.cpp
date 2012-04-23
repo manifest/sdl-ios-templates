@@ -1,10 +1,8 @@
-#include <iostream>
-#include <string>
-#include <cstdlib>
-#include "SDL.h"
+#include <SDL/SDL.h>
+#include <stdexcept>
 
-const unsigned Width = 256;
-const unsigned Height = 256;
+const int Width = 320;
+const int Height = 480;
 
 Uint16 CreateHicolorPixel(SDL_PixelFormat *fmt, Uint8 red, Uint8 green, Uint8 blue) {
 	Uint16 value = 
@@ -15,32 +13,36 @@ Uint16 CreateHicolorPixel(SDL_PixelFormat *fmt, Uint8 red, Uint8 green, Uint8 bl
 	return value;
 }
 
-void error(const std::string &msg) {	
-	std::cerr<<msg<<": "<<SDL_GetError()<<std::endl;
-	exit(1);
-}
-
 int main(int argc, char **argv) {
 	if(SDL_Init(SDL_INIT_VIDEO) != 0)
-		error("Unable to initialize SDL");
-	atexit(SDL_Quit);
+		std::runtime_error("Unable to initialize SDL");
 	
-	SDL_Surface *screen = SDL_SetVideoMode(Width, Height, 16, 0 /* SDL_FULLSCREEN */);
-	if(!screen)
-		error("Unable to set video mode");
+    SDL_Window *window(SDL_CreateWindow(
+        "SDL_Window", 
+        SDL_WINDOWPOS_CENTERED, 
+        SDL_WINDOWPOS_CENTERED,
+        Width, 
+        Height, 
+        SDL_WINDOW_SHOWN | SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL
+    ));
+	if(!window)
+		std::runtime_error("Unable to create window");
 	
-	SDL_LockSurface(screen);
-	Uint16 *raw_pixels = static_cast<Uint16 *>(screen->pixels);
-	for(int x = 0; x < Width; x++) {
-		for(int y = 0; y < Height; y++) {
-			Uint16 pixel_color = CreateHicolorPixel(screen->format, x, 0, y); 
-			int offset = (screen->pitch / 2 * y + x);
+    SDL_Surface *surface(SDL_GetWindowSurface(window));
+	SDL_LockSurface(surface);
+	Uint16 *raw_pixels = static_cast<Uint16 *>(surface->pixels);
+	for(int x = 0; x < 255; ++x) {
+		for(int y = 0; y < 255; ++y) {
+			Uint16 pixel_color = CreateHicolorPixel(surface->format, x, 0, y); 
+			int offset = (surface->pitch / 2 * y + x);
 			raw_pixels[offset] = pixel_color;
 		}
 	}
-	SDL_UnlockSurface(screen);
-	SDL_UpdateRect(screen, 0, 0, 0, 0);
-	SDL_Delay(3000);
-	
-	return 0;
+    SDL_UpdateWindowSurface(window);
+    SDL_GL_SwapWindow(window);
+    SDL_Delay(5000);
+    
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+    return 0;
 }
