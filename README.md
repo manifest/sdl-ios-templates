@@ -36,7 +36,7 @@ To customize, follow the article ["A minimal project template for Xcode 4"][mini
 
 Minimal SDL iOS Application Template based on [Minimal Template][minimal-template] and is provided under the terms of [the MIT license][license].
 
-[sdl-ios-framework]:https://github.com/manifest1985/sdl-ios-framework
+[sdl-ios-framework]:https://github.com/manifest/sdl-ios-framework
 [minimal-template-article]:http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4
 [minimal-template]:https://github.com/borealkiss/Minimal-Template
 [license]:http://www.opensource.org/licenses/MIT
