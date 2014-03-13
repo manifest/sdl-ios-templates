@@ -12,32 +12,19 @@
 	<dict>
 		<key>info.plist</key>
 		<dict>
-			<key>Group</key>
-			<string>Supporting Files</string>
 			<key>Path</key>
 			<string>info.plist</string>
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
-		<key>prefix.pch</key>
+		<key>main.c</key>
 		<dict>
-			<key>Group</key>
-			<string>Supporting Files</string>
 			<key>Path</key>
-			<string>prefix.pch</string>
-			<key>TargetIndices</key>
-			<array/>
-		</dict>
-		<key>main.cpp</key>
-		<dict>
-			<key>Group</key>
-			<string>Sources</string>
-			<key>Path</key>
-			<string>main.cpp</string>
+			<string>main.c</string>
 		</dict>
 	</dict>
 	<key>Description</key>
-	<string>This template provides a starting point for SDL application.</string>
+	<string>This template provides a starting point for the SDL application.</string>
 	<key>Identifier</key>
 	<string>org.yanot.SDLApplication</string>
 	<key>Kind</key>
@@ -45,8 +32,7 @@
 	<key>Nodes</key>
 	<array>
 		<string>info.plist</string>
-		<string>prefix.pch</string>
-		<string>main.cpp</string>
+		<string>main.c</string>
 	</array>
 	<key>Targets</key>
 	<array>
@@ -57,15 +43,11 @@
 				<dict>
 					<key>FRAMEWORK_SEARCH_PATHS</key>
 					<string>$(inherited) "~/Library/Frameworks"</string>
-					<key>HEADER_SEARCH_PATHS</key>
-					<string>$(inherited) "~/Library/Frameworks/SDL.framework/Headers"</string>
 				</dict>
 				<key>Debug</key>
 				<dict>
 					<key>FRAMEWORK_SEARCH_PATHS</key>
 					<string>$(inherited) "~/Library/Frameworks"</string>
-					<key>HEADER_SEARCH_PATHS</key>
-					<string>$(inherited) "~/Library/Frameworks/SDL.framework/Headers"</string>
 				</dict>
 			</dict>
 			<key>Frameworks</key>
@@ -74,7 +56,7 @@
 				<string>QuartzCore</string>
 				<string>CoreAudio</string>
 				<string>AudioToolbox</string>
-				<string>SDL</string>
+				<string>SDL2</string>
 			</array>
 		</dict>
 	</array>
