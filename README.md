@@ -14,17 +14,11 @@ Specifically,
 		$ mkdir -p ~/Library/Developer/Xcode/Templates
 		$ git clone https://github.com/manifest/sdl-ios-templates ~/Library/Developer/Xcode/Templates/SDL
 
-2. Use [SDL iOS build script][sdl-ios-framework] to build the `SDL.framework`.
-
-		$ git clone https://github.com/manifest/sdl-ios-framework.git
-		$ cd sdl-ios-framework && rake SDL2:build
+2. Use [SDL iOS build script][sdl-ios-framework] to download and build the `SDL.framework`.
 
 3. Copy `SDL.framework` to the `~/Library/Frameworks` directory.
 Or place it anywhere, but then not forget to specify that path
 in the `Framework Search Paths` property of the Xcode project.
-
-		$ mkdir -p ~/Library/Frameworks
-		$ cp -vr build/sdl/SDL2.framework ~/Library/Frameworks
 
 4. Open Xcode and create a new project. Select the template from the iOS pane.
 
