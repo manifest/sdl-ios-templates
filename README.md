@@ -1,6 +1,6 @@
-# Minimal SDL iOS Application Template for Xcode 4
+# Minimal SDL iOS Application Template for Xcode
 
-A minimal Xcode 4 project template for developing an iOS applications with SDL and C/C++.  
+A minimal Xcode project template for developing iOS applications with SDL and C/C++.  
 Specifically,
 
 - No definitions of files or functions inside abstract templates, enabling you to easily parse and customize the template.
@@ -9,12 +9,12 @@ Specifically,
 
 ### Getting Started
 
-1. Place the directory of this project to the Xcode Template directory, create it if needed.
+1. Place the directory of the project to the following directory, create it if needed.
 
 		$ mkdir -p ~/Library/Developer/Xcode/Templates
 		$ git clone https://github.com/manifest/sdl-ios-templates ~/Library/Developer/Xcode/Templates/SDL
 
-2. Use [SDL iOS build script][sdl-ios-framework] to download and build the `SDL.framework`.
+2. Use [SDL iOS build script][sdl-ios-framework] to download and build `SDL.framework`.
 
 3. Copy `SDL.framework` to the `~/Library/Frameworks` directory.
 Or place it anywhere, but then not forget to specify that path
