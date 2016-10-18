@@ -52,6 +52,8 @@
 			</dict>
 			<key>Frameworks</key>
 			<array>
+				<string>GameController</string>
+				<string>CoreMotion</string>
 				<string>OpenGLES</string>
 				<string>QuartzCore</string>
 				<string>CoreAudio</string>
